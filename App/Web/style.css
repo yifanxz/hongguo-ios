@@ -1,0 +1,28 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px 18px 40px;
+  font-family: -apple-system, "PingFang SC", sans-serif;
+  background: #faf7f2; color: #26221e;
+}
+@media (prefers-color-scheme: dark) {
+  body { background: #17140f; color: #ece7df; }
+}
+h1 { font-size: 22px; margin: 0 0 6px; }
+.sub { margin: 0 0 20px; color: #8a8175; font-size: 13px; }
+.row {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 13px 14px; margin-bottom: 8px;
+  background: rgba(127, 118, 102, 0.10); border-radius: 12px;
+  font-size: 14px;
+}
+.row .name { font-weight: 600; flex-shrink: 0; }
+.row .val { text-align: right; word-break: break-all; color: #6d6455; }
+.row.ok .val { color: #1d9e57; }
+.row.fail .val { color: #d93a2b; }
+button {
+  width: 100%; margin-top: 14px; padding: 14px;
+  border: 0; border-radius: 12px;
+  background: #e63329; color: #fff; font-size: 16px; font-weight: 600;
+}
+.hint { color: #8a8175; font-size: 12px; text-align: center; margin-top: 14px; }

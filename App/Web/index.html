@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>红果短剧 · 壳诊断</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>红果短剧 · 壳诊断</h1>
+  <p class="sub">A 方案空壳 v0.1 — 验证 WebView / JS 桥 / 存储 / 媒体能力</p>
+</header>
+<main id="results">
+  <div class="row" id="t-ua"><span class="name">WebView 引擎</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-bridge"><span class="name">JS ↔ Swift 桥 (ping)</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-info"><span class="name">设备信息 (getInfo)</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-storage"><span class="name">localStorage 读写</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-h264"><span class="name">H.264 播放支持</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-hevc"><span class="name">HEVC 播放支持</span><span class="val">检测中…</span></div>
+  <div class="row" id="t-net"><span class="name">外网连通 (hongguoduanju.com)</span><span class="val">检测中…</span></div>
+</main>
+<button id="rerun">重新检测</button>
+<p class="hint">全部变绿 = 空壳在 LiveContainer 里跑通。把这一页截图发回即可。</p>
+<script src="app.js"></script>
+</body>
+</html>
